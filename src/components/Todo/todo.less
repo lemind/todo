@@ -1,0 +1,40 @@
+.todo {
+  &__item {
+    height: 31px;
+    border-bottom: 1px solid #e6ebed;
+    display: flex;
+  }
+
+  &__checkbox-block {
+    width: 38px;
+    border-right: 1px solid #f2e3df;
+    height: 100%;
+
+    input {
+      margin: 7px 0 0 13px;
+    }
+  }
+
+  &__info-block {
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+    border-left: 1px solid #f2e3df;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font: 600 12px/24px @LucidaGrandeRegular;
+    color: #8b8f97;
+    margin-left: 10px;
+  }
+
+  &__delete {
+    margin-right: 10px;
+    height: 12px;
+    width: 11px;
+    background-image: url(../../static/img/trash-can.png);
+    cursor: pointer;
+  }
+}

@@ -28,7 +28,6 @@ todosEpics.todosCreateEpic = action$ =>
     .mergeMap(action => {
       return API.createTodo(action.todo)
         .map(response => {
-          console.log('333', response)
           return actions.todoCreateSucceeded(response)
         })
         .catch(error => of(

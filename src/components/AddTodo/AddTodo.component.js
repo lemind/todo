@@ -31,16 +31,21 @@ export class AddTodoComponent extends React.Component {
     return (
       <div>
         <form
+          className="add"
           onSubmit={this.onSubmit}
         >
-          <input
-            ref={node => {
-              this.state.input = node
-            }}
-          />
-          <button type="submit">
-            Add Todo
-          </button>
+          <div className="add__empty"></div>
+          <div className="add__actions">
+            <button className="add__button" type="submit">
+              +
+            </button>
+            <input
+              className="add__input"
+              ref={node => {
+                this.state.input = node
+              }}
+            />
+          </div>
         </form>
       </div>
     )

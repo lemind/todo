@@ -41,7 +41,7 @@ export class TodoListComponent extends React.Component {
   render() {
     return (
       <div>
-        <ul>
+        <div>
           {this.state.todos.length && this.state.todos.map(todo => (
             <Todo
               key={todo.id}
@@ -50,7 +50,7 @@ export class TodoListComponent extends React.Component {
               onDeleteClick={() => this.todoDeleteClickEvent(todo.id)}
             />
           ))}
-        </ul>
+        </div>
       </div>
     )
   };
